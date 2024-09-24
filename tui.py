@@ -47,7 +47,7 @@ class TUI:
             TUI.clear_screen()
 
         if TUI.confirm_action(f"REGISTER STUDENT TO RECORD\n{display_string}\n\n"):
-            new_student = Student(*student_data)
+            new_student = system.construct_student(student_data)
             if not system.check_for_duplicate(new_student):
                 system.add_student_record(new_student)
                 print(f"Added '{new_student.name}' to the records.\n")
