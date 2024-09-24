@@ -1,4 +1,5 @@
 from student_app import *
+from tui import *
 
 predefined_data = [
     ["Nadia", "99", "2023-2-00001", "2023-2-00001@school.edu.gov", "N/A"],
